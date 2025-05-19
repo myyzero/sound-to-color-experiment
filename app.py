@@ -22,7 +22,7 @@ SHEET_NAME = "Sound2ColorOutcome"              # 👈 请确保工作表名正�
 # 连接 Google Sheets
 def connect_to_gsheet():
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("your_credentials.json", scope)  # 👈 替换文件名
+    creds = ServiceAccountCredentials.from_json_keyfile_name("streamlitcolorapp-0a350e473431.json", scope)  # 👈 替换文件名
     client = gspread.authorize(creds)
     sheet = client.open_by_key(SHEET_ID).worksheet(SHEET_NAME)
     return sheet

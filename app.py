@@ -9,7 +9,7 @@ st.title("🎧 音频颜色联想实验")
 st.write("点击按钮播放音频，音频播放结束后，请选择你联想到的颜色，然后点击提交。")
 
 # 播放音频
-audio_file = open("audio/your-audio.mp3", "rb")  # 请将你的音频文件命名为 sample.mp3 并放在 audio 文件夹中
+audio_file = open("your-audio.mp3", "rb")  # 请将你的音频文件命名为 sample.mp3 并放在 audio 文件夹中
 st.audio(audio_file.read(), format="audio/mp3")
 
 # 颜色选择器
